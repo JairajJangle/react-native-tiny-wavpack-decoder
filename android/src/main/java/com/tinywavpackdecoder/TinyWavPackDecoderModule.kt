@@ -3,9 +3,9 @@ package com.tinywavpackdecoder
 import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.module.annotations.ReactModule
 
-@ReactModule(name = TinyWavpackDecoderModule.NAME)
-class TinyWavpackDecoderModule(reactContext: ReactApplicationContext) :
-  NativeTinyWavpackDecoderSpec(reactContext) {
+@ReactModule(name = TinyWavPackDecoderModule.NAME)
+class TinyWavPackDecoderModule(reactContext: ReactApplicationContext) :
+  NativeTinyWavPackDecoderSpec(reactContext) {
 
   override fun getName(): String {
     return NAME
@@ -18,6 +18,6 @@ class TinyWavpackDecoderModule(reactContext: ReactApplicationContext) :
   }
 
   companion object {
-    const val NAME = "TinyWavpackDecoder"
+    const val NAME = "TinyWavPackDecoder"
   }
 }

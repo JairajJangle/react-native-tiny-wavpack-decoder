@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "TinyWavpackDecoderExample.app"
-               BlueprintName = "TinyWavpackDecoderExample"
-               ReferencedContainer = "container:TinyWavpackDecoderExample.xcodeproj">
+               BuildableName = "TinyWavPackDecoderExample.app"
+               BlueprintName = "TinyWavPackDecoderExample"
+               ReferencedContainer = "container:TinyWavPackDecoderExample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "TinyWavpackDecoderExampleTests.xctest"
-               BlueprintName = "TinyWavpackDecoderExampleTests"
-               ReferencedContainer = "container:TinyWavpackDecoderExample.xcodeproj">
+               BuildableName = "TinyWavPackDecoderExampleTests.xctest"
+               BlueprintName = "TinyWavPackDecoderExampleTests"
+               ReferencedContainer = "container:TinyWavPackDecoderExample.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "TinyWavpackDecoderExample.app"
-            BlueprintName = "TinyWavpackDecoderExample"
-            ReferencedContainer = "container:TinyWavpackDecoderExample.xcodeproj">
+            BuildableName = "TinyWavPackDecoderExample.app"
+            BlueprintName = "TinyWavPackDecoderExample"
+            ReferencedContainer = "container:TinyWavPackDecoderExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "TinyWavpackDecoderExample.app"
-            BlueprintName = "TinyWavpackDecoderExample"
-            ReferencedContainer = "container:TinyWavpackDecoderExample.xcodeproj">
+            BuildableName = "TinyWavPackDecoderExample.app"
+            BlueprintName = "TinyWavPackDecoderExample"
+            ReferencedContainer = "container:TinyWavPackDecoderExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

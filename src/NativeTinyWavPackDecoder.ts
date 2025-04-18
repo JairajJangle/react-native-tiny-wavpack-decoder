@@ -5,4 +5,4 @@ export interface Spec extends TurboModule {
   multiply(a: number, b: number): number;
 }
 
-export default TurboModuleRegistry.getEnforcing<Spec>('TinyWavpackDecoder');
+export default TurboModuleRegistry.getEnforcing<Spec>('TinyWavPackDecoder');

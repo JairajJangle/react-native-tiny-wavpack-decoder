@@ -149,7 +149,7 @@
     ]
   },
   "codegenConfig": {
-    "name": "RNTinyWavpackDecoderSpec",
+    "name": "RNTinyWavPackDecoderSpec",
     "type": "modules",
     "jsSrcsDir": "src",
     "outputDir": {

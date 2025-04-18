@@ -1,6 +1,6 @@
 
-#import <TinyWavpackDecoder/RNTinyWavpackDecoderSpec.h>
+#import <TinyWavPackDecoder/RNTinyWavPackDecoderSpec.h>
 
-@interface TinyWavpackDecoder : NSObject <NativeTinyWavpackDecoderSpec>
+@interface TinyWavPackDecoder : NSObject <NativeTinyWavPackDecoderSpec>
 
 @end

@@ -1,6 +1,6 @@
 buildscript {
   ext.getExtOrDefault = {name ->
-    return rootProject.ext.has(name) ? rootProject.ext.get(name) : project.properties['TinyWavpackDecoder_' + name]
+    return rootProject.ext.has(name) ? rootProject.ext.get(name) : project.properties['TinyWavPackDecoder_' + name]
   }
 
   repositories {
@@ -22,7 +22,7 @@ apply plugin: "kotlin-android"
 apply plugin: "com.facebook.react"
 
 def getExtOrIntegerDefault(name) {
-  return rootProject.ext.has(name) ? rootProject.ext.get(name) : (project.properties["TinyWavpackDecoder_" + name]).toInteger()
+  return rootProject.ext.has(name) ? rootProject.ext.get(name) : (project.properties["TinyWavPackDecoder_" + name]).toInteger()
 }
 
 def supportsNamespace() {
@@ -95,6 +95,6 @@ dependencies {
 
 react {
   jsRootDir = file("../src/")
-  libraryName = "TinyWavpackDecoder"
+  libraryName = "TinyWavPackDecoder"
   codegenJavaPackageName = "com.tinywavpackdecoder"
 }

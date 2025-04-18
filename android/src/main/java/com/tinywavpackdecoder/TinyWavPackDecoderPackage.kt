@@ -7,10 +7,10 @@ import com.facebook.react.module.model.ReactModuleInfo
 import com.facebook.react.module.model.ReactModuleInfoProvider
 import java.util.HashMap
 
-class TinyWavpackDecoderPackage : BaseReactPackage() {
+class TinyWavPackDecoderPackage : BaseReactPackage() {
   override fun getModule(name: String, reactContext: ReactApplicationContext): NativeModule? {
-    return if (name == TinyWavpackDecoderModule.NAME) {
-      TinyWavpackDecoderModule(reactContext)
+    return if (name == TinyWavPackDecoderModule.NAME) {
+      TinyWavPackDecoderModule(reactContext)
     } else {
       null
     }
@@ -19,9 +19,9 @@ class TinyWavpackDecoderPackage : BaseReactPackage() {
   override fun getReactModuleInfoProvider(): ReactModuleInfoProvider {
     return ReactModuleInfoProvider {
       val moduleInfos: MutableMap<String, ReactModuleInfo> = HashMap()
-      moduleInfos[TinyWavpackDecoderModule.NAME] = ReactModuleInfo(
-        TinyWavpackDecoderModule.NAME,
-        TinyWavpackDecoderModule.NAME,
+      moduleInfos[TinyWavPackDecoderModule.NAME] = ReactModuleInfo(
+        TinyWavPackDecoderModule.NAME,
+        TinyWavPackDecoderModule.NAME,
         false,  // canOverrideExistingModule
         false,  // needsEagerInit
         false,  // isCxxModule

@@ -1,5 +1,5 @@
-import TinyWavpackDecoder from './NativeTinyWavpackDecoder';
+import TinyWavPackDecoder from './NativeTinyWavPackDecoder';
 
 export function multiply(a: number, b: number): number {
-  return TinyWavpackDecoder.multiply(a, b);
+  return TinyWavPackDecoder.multiply(a, b);
 }
