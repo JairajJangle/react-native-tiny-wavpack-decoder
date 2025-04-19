@@ -1,16 +1,16 @@
 import NativeTinyWavPackDecoder from './NativeTinyWavPackDecoder';
 
-export interface WavPackDecoderOptions {
+export interface TinyWavPackDecoderOptions {
   maxSamples?: number;
   bitsPerSample?: 8 | 16 | 24 | 32;
   verbose?: boolean;
 }
 
-const WavPackDecoder = {
+const TinyWavPackDecoder = {
   decode: async (
     inputPath: string,
     outputPath: string,
-    options: WavPackDecoderOptions = {}
+    options: TinyWavPackDecoderOptions = {}
   ): Promise<string> => {
     const { maxSamples = -1, bitsPerSample = 16, verbose = false } = options;
     if (![8, 16, 24, 32].includes(bitsPerSample)) {
@@ -26,4 +26,4 @@ const WavPackDecoder = {
   },
 };
 
-export default WavPackDecoder;
+export default TinyWavPackDecoder;
