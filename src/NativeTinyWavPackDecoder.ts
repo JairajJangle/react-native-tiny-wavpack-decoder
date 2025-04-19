@@ -2,7 +2,15 @@ import type { TurboModule } from 'react-native';
 import { TurboModuleRegistry } from 'react-native';
 
 export interface Spec extends TurboModule {
-  multiply(a: number, b: number): number;
+  decodeWavPack(
+    inputPath: string,
+    outputPath: string,
+    maxSamples?: number,
+    bitsPerSample?: number,
+    verbose?: boolean
+  ): Promise<string>;
 }
 
-export default TurboModuleRegistry.getEnforcing<Spec>('TinyWavPackDecoder');
+export default TurboModuleRegistry.getEnforcing<Spec>(
+  'TinyWavPackDecoderModule'
+);
