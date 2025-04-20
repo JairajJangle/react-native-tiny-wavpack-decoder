@@ -5,6 +5,11 @@
   "source": "./src/index.tsx",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
+  "react-native": {
+    "android": {
+      "sourceDir": "./android"
+    }
+  },
   "exports": {
     ".": {
       "types": "./lib/typescript/src/index.d.ts",
