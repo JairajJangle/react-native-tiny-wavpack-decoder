@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Button, StyleSheet, Text, View } from 'react-native';
 import * as RNFS from '@dr.pogodin/react-native-fs';
 import TinyWavPackDecoder from 'react-native-tiny-wavpack-decoder';
@@ -6,6 +6,19 @@ import TinyWavPackDecoder from 'react-native-tiny-wavpack-decoder';
 export default function App() {
   const [result, setResult] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [progress, setProgress] = useState(0);
+
+  useEffect(() => {
+    console.log('Setting up progress listener');
+    const subscription = TinyWavPackDecoder.addProgressListener((p: number) => {
+      console.log(`Progress update: ${p}`);
+      setProgress(p);
+    });
+    return () => {
+      console.log('Cleaning up progress listener');
+      subscription.remove();
+    };
+  }, []);
 
   const decode = async () => {
     const inputPath = `${RNFS.DocumentDirectoryPath}/sample.wv`;
@@ -34,6 +47,7 @@ export default function App() {
       <Button title="Decode WavPack File" onPress={decode} />
       {result && <Text style={styles.result}>Result: {result}</Text>}
       {error && <Text style={styles.error}>Error: {error}</Text>}
+      <Text>Progress: {(progress * 100).toFixed(2)}%</Text>
     </View>
   );
 }
