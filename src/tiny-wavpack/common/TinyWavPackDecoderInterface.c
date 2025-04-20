@@ -112,7 +112,6 @@
      const char* outputPath,
      int max_samples,
      int force_bps,
-     int verbose,
      ProgressCallback progress_callback,
      void* context
  ) {
@@ -345,17 +344,6 @@
 
         if (progress_callback) {
             progress_callback((float)totalSamplesRead / samples_to_decode, context);
-        }        
-         
-         // Print progress if verbose mode is enabled
-        if (verbose) {
-            printf("Progress: %d/%u samples (%.1f%%)\r",
-                   totalSamplesRead, samples_to_decode,
-                   (float)totalSamplesRead * 100 / samples_to_decode);
-            fflush(stdout); // Ensure the output is flushed immediately
-        }
-        if (verbose && totalSamplesRead == samples_to_decode) {
-            printf("Progress: %d/%u samples (100.0%%)\n", totalSamplesRead, samples_to_decode);
         }
      }
      ////////////////////////////////////////////////////////////////////////////////
@@ -376,7 +364,6 @@
      
      // Check if all requested samples were decoded
      if (totalSamplesRead == samples_to_decode) {
-         if (verbose) fprintf(stderr, "\n");
          return make_success();
      } else {
          return make_error(ERR_DECODE_FAILED, "Failed to decode all requested samples");

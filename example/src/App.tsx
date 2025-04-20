@@ -31,7 +31,6 @@ export default function App() {
         {
           maxSamples: -1,
           bitsPerSample: 16,
-          verbose: true,
         }
       );
       setResult(decodeResult);

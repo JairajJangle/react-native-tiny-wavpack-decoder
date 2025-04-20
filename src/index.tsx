@@ -8,7 +8,6 @@ import {
 export interface TinyWavPackDecoderOptions {
   maxSamples?: number;
   bitsPerSample?: 8 | 16 | 24 | 32;
-  verbose?: boolean;
 }
 
 const { TinyWavPackDecoderModule } = NativeModules;
@@ -20,7 +19,7 @@ const TinyWavPackDecoder = {
     outputPath: string,
     options: TinyWavPackDecoderOptions = {}
   ): Promise<string> => {
-    const { maxSamples = -1, bitsPerSample = 16, verbose = false } = options;
+    const { maxSamples = -1, bitsPerSample = 16 } = options;
 
     if (![8, 16, 24, 32].includes(bitsPerSample)) {
       throw new Error('bitsPerSample must be 8, 16, 24, or 32');
@@ -30,8 +29,7 @@ const TinyWavPackDecoder = {
       inputPath,
       outputPath,
       maxSamples,
-      bitsPerSample,
-      verbose
+      bitsPerSample
     );
   },
 

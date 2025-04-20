@@ -39,7 +39,6 @@ DecoderResult decode_wavpack_to_wav(
     const char* outputPath,
     int max_samples,
     int force_bps,
-    int verbose,
     ProgressCallback progress_callback,
     void* context
 );

@@ -6,8 +6,7 @@ export interface Spec extends TurboModule {
     inputPath: string,
     outputPath: string,
     maxSamples?: number,
-    bitsPerSample?: number,
-    verbose?: boolean
+    bitsPerSample?: number
   ): Promise<string>;
 
   // Add these to satisfy NativeEventEmitter

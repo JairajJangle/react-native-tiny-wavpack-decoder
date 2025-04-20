@@ -32,12 +32,10 @@ RCT_EXPORT_MODULE(TinyWavPackDecoderModule);
            outputPath:(NSString *)outputPath
            maxSamples:(NSNumber *)maxSamples
        bitsPerSample:(NSNumber *)bitsPerSample
-             verbose:(NSNumber *)verbose
              resolve:(RCTPromiseResolveBlock)resolve
               reject:(RCTPromiseRejectBlock)reject {
     int maxSamplesInt = maxSamples != nil ? [maxSamples intValue] : -1;
     int bitsPerSampleInt = bitsPerSample != nil ? [bitsPerSample intValue] : 0; // Default to 16-bit
-    bool verboseBool = verbose != nil ? [verbose boolValue] : false;
     const char *inputPathC = [inputPath UTF8String];
     const char *outputPathC = [outputPath UTF8String];
 
@@ -46,8 +44,7 @@ RCT_EXPORT_MODULE(TinyWavPackDecoderModule);
         outputPathC,
         maxSamplesInt,
         bitsPerSampleInt,
-        verboseBool,
-        verboseBool ? progressCallbackBridge : NULL,
+        progressCallbackBridge,
         (__bridge void*)self
     );
 
