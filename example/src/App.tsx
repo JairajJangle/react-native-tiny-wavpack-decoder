@@ -1,7 +1,46 @@
 import { useEffect, useState } from 'react';
-import { Button, StyleSheet, Text, View } from 'react-native';
+import {
+  Button,
+  PermissionsAndroid,
+  Platform,
+  StyleSheet,
+  Text,
+  View,
+} from 'react-native';
 import * as RNFS from '@dr.pogodin/react-native-fs';
 import TinyWavPackDecoder from 'react-native-tiny-wavpack-decoder';
+
+const sourcePath = '/sdcard/sample.wv';
+const destinationPath = `${RNFS.DocumentDirectoryPath}/sample.wv`;
+
+const copyFile = async () => {
+  RNFS.copyFile(sourcePath, destinationPath)
+    .then(() => console.log('File copied to DocumentDirectoryPath'))
+    .catch((err) => console.error('Error copying file:', err));
+};
+
+const requestStoragePermission = async () => {
+  try {
+    const granted = await PermissionsAndroid.request(
+      PermissionsAndroid.PERMISSIONS.READ_EXTERNAL_STORAGE,
+      {
+        title: 'Storage Permission',
+        message: 'This app needs access to your storage to read files.',
+        buttonNeutral: 'Ask Me Later',
+        buttonNegative: 'Cancel',
+        buttonPositive: 'OK',
+      }
+    );
+    if (granted === PermissionsAndroid.RESULTS.GRANTED) {
+      console.log('Storage permission granted');
+      copyFile();
+    } else {
+      console.log('Storage permission denied');
+    }
+  } catch (err) {
+    console.warn(err);
+  }
+};
 
 export default function App() {
   const [result, setResult] = useState<string | null>(null);
@@ -9,6 +48,10 @@ export default function App() {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
+    if (Platform.OS === 'android') {
+      requestStoragePermission();
+    }
+
     console.log('Setting up progress listener');
     const subscription = TinyWavPackDecoder.addProgressListener((p: number) => {
       console.log(`Progress update: ${p}`);
