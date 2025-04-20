@@ -46,7 +46,9 @@ RCT_EXPORT_MODULE(TinyWavPackDecoderModule);
         outputPathC,
         maxSamplesInt,
         bitsPerSampleInt,
-        verboseBool
+        verboseBool,
+        verboseBool ? progressCallbackBridge : NULL,
+        (__bridge void*)self
     );
 
     // Dispatch promise resolution/rejection to the main queue
@@ -58,6 +60,27 @@ RCT_EXPORT_MODULE(TinyWavPackDecoderModule);
             reject(@"decode_error", errorMessage, nil);
         }
     });
+}
+
+- (NSArray<NSString *> *)supportedEvents {
+    return @[@"onProgressUpdate"];
+}
+
+static void progressCallbackBridge(float progress, void* context) {
+    TinyWavPackDecoder* decoder = (__bridge TinyWavPackDecoder*)context;
+    if (decoder.bridge) {
+        [decoder sendEventWithName:@"onProgressUpdate" body:@{@"progress": @(progress)}];
+    } else {
+        RCTLogWarn(@"Cannot emit TinyWavPackDecoder progress event: bridge is nil");
+    }
+}
+
+- (void)startObserving {
+    RCTLogInfo(@"Starting event observation for TinyWavPackDecoder");
+}
+
+- (void)stopObserving {
+    RCTLogInfo(@"Stopping event observation for TinyWavPackDecoder");
 }
 
 @end

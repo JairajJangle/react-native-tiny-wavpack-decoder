@@ -112,7 +112,9 @@
      const char* outputPath,
      int max_samples,
      int force_bps,
-     int verbose
+     int verbose,
+     ProgressCallback progress_callback,
+     void* context
  ) {
      // Validate inputs
      if (!inputPath || !outputPath) {
@@ -340,6 +342,10 @@
          }
          
          totalSamplesRead += samplesRead;
+
+        if (progress_callback) {
+            progress_callback((float)totalSamplesRead / samples_to_decode, context);
+        }        
          
          // Print progress if verbose mode is enabled
         if (verbose) {

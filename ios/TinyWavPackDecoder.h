@@ -2,6 +2,7 @@
 #import <ReactCommon/RCTTurboModule.h>
 #import <jsi/jsi.h>
 #import <RNTinyWavPackDecoderSpec.h>
+#import <React/RCTEventEmitter.h>
 
-@interface TinyWavPackDecoder : NSObject <NativeTinyWavPackDecoderSpec>
+@interface TinyWavPackDecoder : RCTEventEmitter <NativeTinyWavPackDecoderSpec>
 @end

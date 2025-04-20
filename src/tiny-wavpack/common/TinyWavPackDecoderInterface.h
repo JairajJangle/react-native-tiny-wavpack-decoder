@@ -30,13 +30,18 @@ typedef struct {
     char error[80];     // Error message if any
 } DecoderResult;
 
+// Callback function pointer type
+typedef void (*ProgressCallback)(float progress, void* context);
+
 // Core decoding function
 DecoderResult decode_wavpack_to_wav(
     const char* inputPath,
     const char* outputPath,
     int max_samples,
     int force_bps,
-    int verbose
+    int verbose,
+    ProgressCallback progress_callback,
+    void* context
 );
 
 #ifdef __cplusplus

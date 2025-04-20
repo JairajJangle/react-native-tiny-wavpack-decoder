@@ -9,6 +9,10 @@ export interface Spec extends TurboModule {
     bitsPerSample?: number,
     verbose?: boolean
   ): Promise<string>;
+
+  // Add these to satisfy NativeEventEmitter
+  addListener: (eventType: string) => void;
+  removeListeners: (count: number) => void;
 }
 
 export default TurboModuleRegistry.getEnforcing<Spec>(
