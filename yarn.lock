@@ -1750,17 +1750,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dr.pogodin/react-native-fs@npm:2.27.1":
-  version: 2.27.1
-  resolution: "@dr.pogodin/react-native-fs@npm:2.27.1"
+"@dr.pogodin/react-native-fs@npm:2.32.1":
+  version: 2.32.1
+  resolution: "@dr.pogodin/react-native-fs@npm:2.32.1"
   dependencies:
     buffer: ^6.0.3
     http-status-codes: ^2.3.0
   peerDependencies:
     react: "*"
     react-native: "*"
-    react-native-windows: "*"
-  checksum: a69fcd56a14c2b721d88356765017b80a4abcfe92fb683254583c4cb079ef620a5b5e84f3a58aa33ab4c3bf5b05565d44885c2b4141abe8867287d94e7a66b65
+  checksum: 665e0acbc1969c9eb10e5d6f0879991e859081033c292f03ec12f955e65f152900b288487be32be2febe4dfea07db76b555e78220e4c5f9de4bb98e4c97ac189
   languageName: node
   linkType: hard
 
@@ -10573,7 +10572,7 @@ __metadata:
     "@babel/core": ^7.25.2
     "@babel/preset-env": ^7.25.3
     "@babel/runtime": ^7.25.0
-    "@dr.pogodin/react-native-fs": 2.27.1
+    "@dr.pogodin/react-native-fs": 2.32.1
     "@react-native-community/cli": 15.0.1
     "@react-native-community/cli-platform-android": 15.0.1
     "@react-native-community/cli-platform-ios": 15.0.1
