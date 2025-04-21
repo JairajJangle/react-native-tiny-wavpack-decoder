@@ -133,10 +133,10 @@ jobs:
             echo "turbo_cache_hit=1" >> $GITHUB_ENV
           fi
 
-      - name: Restore cocoapods
+      - name: Cache cocoapods
         if: env.turbo_cache_hit != 1
         id: cocoapods-cache
-        uses: actions/cache/restore@v4
+        uses: actions/cache@v4
         with:
           path: |
             **/ios/Pods
@@ -152,14 +152,12 @@ jobs:
         env:
           NO_FLIPPER: 1
 
-      - name: Cache cocoapods
-        if: env.turbo_cache_hit != 1 && steps.cocoapods-cache.outputs.cache-hit != 'true'
-        uses: actions/cache/save@v4
-        with:
-          path: |
-            **/ios/Pods
-          key: ${{ steps.cocoapods-cache.outputs.cache-key }}
-
       - name: Build example for iOS
         run: |
-          yarn turbo run build:ios --cache-dir="${{ env.TURBO_CACHE_DIR }}"
+          yarn turbo run build:ios --cache-dir="${{ env.TURBO_CACHE_DIR }}" 2>&1 | grep -i error > ios_errorlog.txt
+      
+      - name: Upload iOS error log
+        uses: actions/upload-artifact@v4
+        with:
+          name: ios-error-log
+          path: ios_errorlog.txt
