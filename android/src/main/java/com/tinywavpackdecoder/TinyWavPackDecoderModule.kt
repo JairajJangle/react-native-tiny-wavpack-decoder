@@ -70,12 +70,10 @@ class TinyWavPackDecoderModule(reactContext: ReactApplicationContext) :
                         bitsPerSampleInt
                     )
 
-                    if (result == "Success") {
-                        reactApplicationContext.runOnJSQueueThread {
+                    reactApplicationContext.runOnJSQueueThread {
+                        if (result == "Success") {
                             promise.resolve(result)
-                        }
-                    } else {
-                        reactApplicationContext.runOnJSQueueThread {
+                        } else {
                             promise.reject("DECODE_ERROR", result)
                         }
                     }
@@ -106,11 +104,11 @@ class TinyWavPackDecoderModule(reactContext: ReactApplicationContext) :
 
     @ReactMethod
     fun addListener(eventType: String) {
-        // Required for RN built in Event Emitter Support
+        // Required for RN built-in Event Emitter Support
     }
 
     @ReactMethod
     fun removeListeners(count: Int) {
-        // Required for RN built in Event Emitter Support
+        // Required for RN built-in Event Emitter Support
     }
 }
