@@ -18,11 +18,21 @@ A lightweight React Native Turbo Module for decoding WavPack audio files to WAV 
 ## Installation
 
 1. **Install the package**:
+   
+   Using yarn:
+   
+   ```bash
+   yarn add react-native-tiny-wavpack-decoder
+   ```
+   
+   using npm:
+   
    ```bash
    npm install react-native-tiny-wavpack-decoder
    ```
 
 2. **Link native dependencies**:
+
    - For iOS, install CocoaPods dependencies:
      ```bash
      cd ios && pod install
