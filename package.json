@@ -47,8 +47,20 @@
   },
   "keywords": [
     "react-native",
+    "wavpack",
+    "audio-decoder",
+    "turbo-module",
+    "new-architecture",
     "ios",
-    "android"
+    "android",
+    "audio-processing",
+    "wav",
+    "file-conversion",
+    "native-module",
+    "audio",
+    "decoder",
+    "cross-platform",
+    "progress-events"
   ],
   "repository": {
     "type": "git",
