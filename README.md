@@ -12,7 +12,7 @@ A lightweight React Native Turbo Module for decoding WavPack audio files to WAV 
 - Thread-safe decoding on iOS with concurrent queue support.
 
 ## Requirements
-- React Native 0.75 or higher with New Architecture enabled.
+- React Native 0.77 or higher with New Architecture enabled.
 - iOS 13.0 or later.
 - Android API 21 or later.
 - Node.js 16+ for development.
