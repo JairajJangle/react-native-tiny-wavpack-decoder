@@ -57,11 +57,13 @@
   "author": "Jairaj Jangle <reachout.jairaj.jangle@gmail.com> (https://github.com/JairajJangle)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/JairajJangle/react-native-tiny-wavpack-decoder/issues"
+    "url": "https://github.com/JairajJangle/react-native-tiny-wavpack-decoder/issues",
+    "email": "reachout.jairaj.jangle@gmail.com"
   },
   "homepage": "https://github.com/JairajJangle/react-native-tiny-wavpack-decoder#readme",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://registry.npmjs.org/",
+    "provenance": true
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^19.6.0",
@@ -71,7 +73,11 @@
     "@evilmartians/lefthook": "^1.5.0",
     "@react-native-community/cli": "15.0.1",
     "@react-native/eslint-config": "^0.78.0",
-    "@release-it/conventional-changelog": "^9.0.2",
+    "@release-it/conventional-changelog": "^10.0.0",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^11.0.1",
+    "@semantic-release/npm": "^12.0.1",
     "@types/jest": "^29.5.5",
     "@types/react": "^19.0.0",
     "commitlint": "^19.6.1",
@@ -85,6 +91,7 @@
     "react-native": "0.78.2",
     "react-native-builder-bob": "^0.40.6",
     "release-it": "^17.10.0",
+    "semantic-release": "^24.1.0",
     "turbo": "^1.10.7",
     "typescript": "^5.2.2"
   },
