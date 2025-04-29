@@ -1,10 +1,15 @@
 # react-native-tiny-wavpack-decoder
 
-A lightweight React Native Turbo Module for decoding WavPack audio files to WAV format on iOS and Android. Built with the New Architecture for optimal performance, this module supports progress updates during decoding and is designed for seamless integration into React Native apps.
+A lightweight React Native Turbo Module for decoding WavPack audio files to WAV format on iOS and Android. Built with the New Architecture for optimal performance. This module also supports progress updates during decoding.
 
 [![npm version](https://img.shields.io/npm/v/react-native-tiny-wavpack-decoder)](https://badge.fury.io/js/react-native-tiny-wavpack-decoder) [![License](https://img.shields.io/github/license/JairajJangle/react-native-tiny-wavpack-decoder)](https://github.com/JairajJangle/react-native-tiny-wavpack-decoder/blob/main/LICENSE) [![Workflow Status](https://github.com/JairajJangle/react-native-tiny-wavpack-decoder/actions/workflows/ci.yml/badge.svg)](https://github.com/JairajJangle/react-native-tiny-wavpack-decoder/actions/workflows/ci.yml) ![Android](https://img.shields.io/badge/-Android-555555?logo=android&logoColor=3DDC84) ![iOS](https://img.shields.io/badge/-iOS-555555?logo=apple&logoColor=white) [![GitHub issues](https://img.shields.io/github/issues/JairajJangle/react-native-tiny-wavpack-decoder)](https://github.com/JairajJangle/react-native-tiny-wavpack-decoder/issues?q=is%3Aopen+is%3Aissue) ![TS](https://img.shields.io/badge/TypeScript-strict_💪-blue) [![Known Vulnerabilities](https://snyk.io/test/github/jairajjangle/react-native-tiny-wavpack-decoder/badge.svg)](https://snyk.io/test/github/jairajjangle/react-native-tiny-wavpack-decoder) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/react-native-tiny-wavpack-decoder)
 
+<div align="center">
+  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHI4d29ncW1kcGRjeXgwZnVnMzdnNHJnaXFmbzYxcHFud29kOGNkYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/aT8unro6bwv9GWRLkt/giphy.gif" alt="Tiny WavPack Decoding demo" style="border: 1px solid gray;" />
+</div>
+
 ## Features
+
 - Decode WavPack (.wv) files to WAV format.
 - Cross-platform support for iOS (13.0+) and Android (API 21+).
 - Progress updates via event emitter for real-time feedback.
