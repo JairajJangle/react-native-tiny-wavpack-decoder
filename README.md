@@ -148,3 +148,7 @@ MIT License. See [LICENSE](LICENSE) for details.
 ## Acknowledgments
 - Built with [WavPack](https://www.wavpack.com/)'s Tiny Decoder source for efficient audio decoding.
 - Uses React Native’s New Architecture for modern performance.
+
+---
+
+##### Library for encoder coming soon...
