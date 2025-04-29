@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/JairajJangle/react-native-tiny-wavpack-decoder/compare/v1.0.1...v1.0.2) (2025-04-29)
+
+
+### Bug Fixes
+
+* enforced min rn version in package json ([0bb59d2](https://github.com/JairajJangle/react-native-tiny-wavpack-decoder/commit/0bb59d231fabade73a2b881e4aa198e9a24e03fd))
+
 ## [1.0.1](https://github.com/JairajJangle/react-native-tiny-wavpack-decoder/compare/v1.0.0...v1.0.1) (2025-04-28)
 
 
