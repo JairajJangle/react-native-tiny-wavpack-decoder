@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/JairajJangle/react-native-tiny-wavpack-decoder/compare/v1.0.2...v1.1.0) (2025-05-02)
+
+
+### Features
+
+* added support for 16 KB ELF alignment for Android ([a830d72](https://github.com/JairajJangle/react-native-tiny-wavpack-decoder/commit/a830d720613ae71efe9477066eff6fe292c4afc7))
+
 ## [1.0.2](https://github.com/JairajJangle/react-native-tiny-wavpack-decoder/compare/v1.0.1...v1.0.2) (2025-04-29)
 
 
