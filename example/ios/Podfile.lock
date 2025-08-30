@@ -1356,7 +1356,7 @@ PODS:
     - React-jsiexecutor
     - React-RCTFBReactNativeSpec
     - ReactCommon/turbomodule/core
-  - react-native-document-picker (10.1.2):
+  - react-native-document-picker (10.1.5):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1380,7 +1380,7 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - react-native-wavpack-decoder (1.0.1):
+  - react-native-wavpack-decoder (1.0.2):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1726,7 +1726,7 @@ PODS:
     - React-logger (= 0.79.1)
     - React-perflogger (= 0.79.1)
     - React-utils (= 0.79.1)
-  - RNPermissions (5.3.0):
+  - RNPermissions (5.4.2):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1750,7 +1750,7 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - RNShare (12.0.9):
+  - RNShare (12.2.0):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -2053,8 +2053,8 @@ SPEC CHECKSUMS:
   React-logger: cc55ca6e50aeb31216c0a9dec30871cac776ef9a
   React-Mapbuffer: 8df5296f9d9a61f980d293b55026cfebcd8dfb0a
   React-microtasksnativemodule: c8ed30f8ec30affbc73411c54207bd67b1125bbb
-  react-native-document-picker: f4460210c70534fc155e4e0520468bcdce16d2f7
-  react-native-wavpack-decoder: 71ed2e02c1aab3ec42d061f460a84c60d571a1ed
+  react-native-document-picker: 83d9d2da9f2708162da3b92b87421182425e4487
+  react-native-wavpack-decoder: c745a55d946c5a26ad9db293f19554c4d8fdce0a
   React-NativeModulesApple: 8a465be9a58afc56f48c1322331ffbdecd3d4877
   React-oscompat: 74eb4badd12e93899f37a5dbb03d8a638011a292
   React-perflogger: dba4ffef10c54537fa33cb2580cf6d4c48458d36
@@ -2086,8 +2086,8 @@ SPEC CHECKSUMS:
   ReactAppDependencyProvider: 642d266e12ef5ea8cb22ca9576df1f4e036258a2
   ReactCodegen: 86758c0e13c6b245ff0cd7123cc5e8910d67546a
   ReactCommon: aa48e4fddbc6a0afa19dca39a1b6016c150b5db4
-  RNPermissions: aa1218854e3d2a896ac778da95a51a993b35971f
-  RNShare: 43faaefd287ef344e8379caeaca12d112f713295
+  RNPermissions: 38a1b0c582fde6dfef875cac753f628886011caf
+  RNShare: a60af5971cb114a8d31df642b108e3fe00e5b987
   SocketRocket: d4aabe649be1e368d1318fdf28a022d714d65748
   Yoga: d15f5aa644c466e917569ac43b19cbf17975239a
 
