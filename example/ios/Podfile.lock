@@ -1380,7 +1380,7 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - react-native-wavpack-decoder (1.0.2):
+  - react-native-wavpack-decoder (1.1.0):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -2054,7 +2054,7 @@ SPEC CHECKSUMS:
   React-Mapbuffer: 8df5296f9d9a61f980d293b55026cfebcd8dfb0a
   React-microtasksnativemodule: c8ed30f8ec30affbc73411c54207bd67b1125bbb
   react-native-document-picker: 83d9d2da9f2708162da3b92b87421182425e4487
-  react-native-wavpack-decoder: c745a55d946c5a26ad9db293f19554c4d8fdce0a
+  react-native-wavpack-decoder: 87e9c517f28204a8cbe958e3370879f5343e9d92
   React-NativeModulesApple: 8a465be9a58afc56f48c1322331ffbdecd3d4877
   React-oscompat: 74eb4badd12e93899f37a5dbb03d8a638011a292
   React-perflogger: dba4ffef10c54537fa33cb2580cf6d4c48458d36
