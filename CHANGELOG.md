@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/JairajJangle/react-native-tiny-wavpack-decoder/compare/v1.1.0...v1.1.1) (2025-08-30)
+
+
+### Bug Fixes
+
+* **version bump:** dev deps lock file upgraded ([8729128](https://github.com/JairajJangle/react-native-tiny-wavpack-decoder/commit/87291289009611c37ad71940953699d93da2f711))
+
 # [1.1.0](https://github.com/JairajJangle/react-native-tiny-wavpack-decoder/compare/v1.0.2...v1.1.0) (2025-05-02)
 
 
