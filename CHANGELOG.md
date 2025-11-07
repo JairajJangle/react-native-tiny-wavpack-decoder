@@ -1,3 +1,11 @@
+## [1.1.3](https://github.com/JairajJangle/react-native-tiny-wavpack-decoder/compare/v1.1.2...v1.1.3) (2025-11-07)
+
+
+### Bug Fixes
+
+* fixed codegen failure ([17029c1](https://github.com/JairajJangle/react-native-tiny-wavpack-decoder/commit/17029c1c24be1185f88c9266b30b7776c8ecf766))
+* upgraded deps and removed rn cli dep ([9ab6844](https://github.com/JairajJangle/react-native-tiny-wavpack-decoder/commit/9ab6844c5e79d4376a619603fffc233895c1079a))
+
 ## [1.1.2](https://github.com/JairajJangle/react-native-tiny-wavpack-decoder/compare/v1.1.1...v1.1.2) (2025-11-07)
 
 
