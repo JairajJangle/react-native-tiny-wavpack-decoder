@@ -1,3 +1,10 @@
+## [1.1.6](https://github.com/JairajJangle/react-native-tiny-wavpack-decoder/compare/v1.1.5...v1.1.6) (2026-04-04)
+
+
+### Bug Fixes
+
+* **deps:** housekeeping - upgraded deps ([5d81c9d](https://github.com/JairajJangle/react-native-tiny-wavpack-decoder/commit/5d81c9d7c08577b651fe2f17077be1aefc934ec4))
+
 ## [1.1.5](https://github.com/JairajJangle/react-native-tiny-wavpack-decoder/compare/v1.1.4...v1.1.5) (2026-02-07)
 
 
