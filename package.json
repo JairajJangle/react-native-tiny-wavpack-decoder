@@ -203,5 +203,8 @@
       "type": "individual",
       "url": "https://ko-fi.com/futurejj"
     }
-  ]
+  ],
+  "resolutions": {
+    "undici@6.23.0": "^6.28.0"
+  }
 }
