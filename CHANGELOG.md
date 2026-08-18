@@ -1,3 +1,10 @@
+## [1.1.7](https://github.com/JairajJangle/react-native-tiny-wavpack-decoder/compare/v1.1.6...v1.1.7) (2026-08-18)
+
+
+### Bug Fixes
+
+* **deps:** resolve dependabot security alerts ([c6ed2de](https://github.com/JairajJangle/react-native-tiny-wavpack-decoder/commit/c6ed2de94eceab266b3c0a6b4d734beb7d69be95))
+
 ## [1.1.6](https://github.com/JairajJangle/react-native-tiny-wavpack-decoder/compare/v1.1.5...v1.1.6) (2026-04-04)
 
 
