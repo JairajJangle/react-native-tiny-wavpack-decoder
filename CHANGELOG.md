@@ -1,3 +1,11 @@
+## [1.1.8](https://github.com/JairajJangle/react-native-tiny-wavpack-decoder/compare/v1.1.7...v1.1.8) (2026-09-06)
+
+
+### Bug Fixes
+
+* **build:** restore loose env mode for turbo v2 ([e6b6ce3](https://github.com/JairajJangle/react-native-tiny-wavpack-decoder/commit/e6b6ce3a66f2aaabc3d6bf81f84ac15bc1326e24))
+* **deps:** patch fast-uri and turbo advisories ([4134f2d](https://github.com/JairajJangle/react-native-tiny-wavpack-decoder/commit/4134f2dce8dd3e1fcacb07b431ea7516a4ef7b71)), closes [#177](https://github.com/JairajJangle/react-native-tiny-wavpack-decoder/issues/177) [#178](https://github.com/JairajJangle/react-native-tiny-wavpack-decoder/issues/178) [#180](https://github.com/JairajJangle/react-native-tiny-wavpack-decoder/issues/180) [#181](https://github.com/JairajJangle/react-native-tiny-wavpack-decoder/issues/181) [#113](https://github.com/JairajJangle/react-native-tiny-wavpack-decoder/issues/113) [#115](https://github.com/JairajJangle/react-native-tiny-wavpack-decoder/issues/115)
+
 ## [1.1.7](https://github.com/JairajJangle/react-native-tiny-wavpack-decoder/compare/v1.1.6...v1.1.7) (2026-08-18)
 
 
